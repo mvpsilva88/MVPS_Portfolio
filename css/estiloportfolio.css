@@ -1,0 +1,386 @@
+@charset "UTF-8";
+/* Body */
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    color: #000000;
+}
+/* Menu */
+
+.containerall {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;	
+}
+
+.menu {
+    height: 45px;
+	width: 100%;
+    margin-left: auto;
+	margin-right: auto;
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: left;
+}
+.menu img {
+	width: 8%;
+	margin-right:30px;
+}
+
+.menu ul {
+    margin-left: 0px;
+	padding-left: 0px;
+	}
+
+.menu ul li {
+	display: inline;
+	padding-left: 0px;
+	padding-right: 50px;
+    text-align:left;
+	margin-left: 0px;
+
+}
+.menu ul li a {
+	margin-left: 0px;
+	text-align: left;
+	color:#000000;
+	text-decoration: none;
+	font-family:"Futura PT Condensed";
+	font-size: 22pt;
+	font-weight: 500;
+}
+
+.menu ul li .active {
+	text-decoration: underline;
+}
+
+
+/* Gallery */
+
+.containerbox {
+	overflow: hidden;
+	padding-top: 30px;
+	padding-bottom: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+    background-color: #E3EEF0;
+    clear: both;
+}
+.containerimg {
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.gallery{
+	margin-top: 0px;
+	height: 350px;
+	width: 48%;
+    text-decoration: none;
+	margin-right:1%;
+	margin-left: 1%;
+	margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    float: left;
+	overflow: hidden;
+	display: block;
+}
+
+.gallery img {
+    margin-top: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.gallery:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background:#868686;
+	opacity: 0;
+	transform: translate3d(-100%, 0, 0, 0);
+	transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+}
+	
+ .gallery:hover:after{
+    opacity: 0.95;
+	transform: translate3d(0, 0, 0);
+}
+
+.gallery h1 {
+	opacity: 0;
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 5px;
+	position: absolute;
+	top: 35px;
+	left: 40px;
+	z-index: 2;
+	transition: all 0.2s ease-in-out;
+}
+
+h1 {
+    font-family: futura-pt-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	font-size: 25pt;
+	
+}
+h2 {
+    font-family: "gibbs light";
+	letter-spacing: 1pt;
+	font-size: 12pt;
+	font-weight: 100;
+}
+	
+.gallery:hover h1{
+	opacity: 1;
+	color: #FFF;
+}
+
+.gallery p {
+    max-width: 350px;
+    color: #FFF;
+    opacity: 0;
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+}
+
+.gallery .viewmore{ 
+    opacity: 0;
+	z-index: 2;
+	position: absolute;
+	left: 40px;
+	bottom: 33px;
+	color: #FFF;
+	font-weight: 600;
+	transition: all 0.2s ease-in-out;
+}
+.gallery:hover p {
+	opacity: 1;
+}
+
+.gallery .viewmore:after {
+	content: ' \203A';
+	vertical-align: -1px;
+}
+
+.gallery:hover .viewmore {
+	opacity: 1;
+}
+
+.gallery_joinbox {
+	background-image:url("../images/Telas-(2).png");
+	background-size: 100%;
+
+}
+
+.gallery_bricolemos{
+	background-image: url("../images/paulino_marca.png");
+	background-size: 100%;
+}
+
+.copyright {
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border-top-width: 2px;
+    clear: both;
+	font-size: 10pt;
+    font-style: normal;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+.copyright p {
+	text-align: center;
+}
+.copyright a {
+	text-align: center;
+	color:#000000;
+}
+/* Mobile */
+@media (max-width: 320px) {
+	
+.containerall {
+	width: 100%;
+	display: block;	
+}
+.menu {
+    height: auto;
+	width: 100%;
+	padding-top:0px;
+	padding-bottom: 0px;
+    background-color: #FFFFFF;
+    text-align: center;
+ }
+.menu img {
+	width: 20%;
+	margin-right:0px;
+}
+
+.menu ul li a {
+	
+	color:#000000;
+	text-decoration: none;
+	font-family:"Futura PT Condensed";
+	font-size: 15pt;
+}
+.menu ul li {
+	display: inline;
+	padding:10px;
+}
+.gallery{
+	margin-top: 0px;
+	height: 150px;
+	width: 100%;
+    text-decoration: none;
+	margin-right:1%;
+	margin-left: 1%;
+    margin-bottom: 20px;
+    position: relative;
+    float: left;
+	overflow: hidden;
+	display: block;
+}
+
+.gallery img {
+    margin-top: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.gallery:after {
+	display: none;
+	}
+	
+ .gallery:hover:after{
+   display: none;
+	}
+.gallery h1 {
+	display: none;
+	}
+	
+.gallery:hover h1{
+	display: none;
+	}
+
+.gallery p {
+    display: none;
+	}
+
+.gallery .viewmore{ 
+    display: none;
+	}
+.gallery:hover p {
+	display: none;
+	}
+.gallery .viewmore:after {
+	display: none;
+	}
+.gallery:hover .viewmore {
+	display: none;
+	}
+.copyright {
+	padding-top: 20px;
+    padding-bottom: 20px;
+	font-size: 8pt;
+}
+}
+/* small tablets*/
+@media (min-width: 321px) and (max-width: 767px){
+	
+.containerall {
+	width: 100%;
+}
+.menu img {
+	width: 13%;
+	margin-right:30px;
+	margin-left: 30px;
+}
+.gallery{
+	margin-top: 0px;
+	height: 350px;
+	width: 90%;
+	padding-left: auto;
+	padding-right: auto;
+	margin-right:auto;
+	margin-left: auto;
+    margin-bottom: 20px;
+	float: none;
+	overflow: hidden;
+	display: block;
+}
+
+.gallery img {
+    margin-top: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.gallery:after {
+	display: none;
+	}
+	
+ .gallery:hover:after{
+   display: none;
+	}
+.gallery h1 {
+	display: none;
+	}
+	
+.gallery:hover h1{
+	display: none;
+	}
+
+.gallery p {
+    display: none;
+	}
+
+.gallery .viewmore{ 
+    display: none;
+	}
+.gallery:hover p {
+	display: none;
+	}
+.gallery .viewmore:after {
+	display: none;
+	}
+.gallery:hover .viewmore {
+	display: none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1096px){
+
+.containerall {
+	width: 90%;
+}
+.menu img {
+	width: 10%;
+	margin-right:30px;
+}
+.column_txt h1 {
+	font-size: 40pt;
+	}
+.column_txt h2 {
+	padding-right: 10px;
+	padding-left: 0px;
+	font-size: 14pt;
+}
+.column_txt h4 {
+	font-size: 18pt;
+	padding-left: 0px;
+	padding-right: 40px;
+	text-align: right;
+	}
+}
