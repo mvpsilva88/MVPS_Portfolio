@@ -9,32 +9,34 @@ body {
 }
 /* Menu */
 
-.menu {
-    text-align: left;
+input {
+    display: none;
+}    
+#menu {
 	overflow: hidden;
 	position: fixed;
 	width: 100%;
 	background: #FFFFFF;
+	
 }
-.menu ul {
-    padding-left: 0%;
+#menu ul {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 10%;
 }
 .btmenu {
 	display: none;
 }
-.menu img {
-	height: 100px;
+#menu img {
+	height: 100px;	
 }
-.menu ul li {
-	display: inline;
-	padding-left: 50px;
-    text-align:left;
-	margin-left: 0px;
 
+#menu ul li {
+    display: inline;
+	padding-left: 50px;
+   
 }
-.menu ul li a {
-	margin-left: 0px;
-	text-align: left;
+#menu ul li a {
 	color:#000000;
 	text-decoration: none;
 	font-family:"Futura PT Condensed";
@@ -42,7 +44,7 @@ body {
 	font-weight: 500;
 }
 
-.menu ul li .active {
+#menu ul li .active {
 	text-decoration: underline;
 }
 
@@ -174,14 +176,70 @@ h2 {
 /* Mobile */
 @media (max-width: 700px) {
 
-.menu img {
+#menu img {
 	height: 60px;
 	}
-.menu ul li {
+#menu ul {
+	padding-left: 0%;
+	  }
+#menu ul li {
 	display: none;
 	}
-	.burger
+.btburger {
+	position: fixed;
+	background: #FFFFFF;
+    width: 40px;
+	height: 40px;
+	right: 30px;
+	top: 30px;
+	cursor: pointer;
+	}		
+.burger {
+	position: relative;
+	display: block;
+	background: #000000;
+	height: 6px;
+	width: 40px;
+    display: block;
+	border-radius: 3px;
 	
+}
+.burger::after, .burger::before  {
+	content: '';
+	width: 40px;
+	height: 6px;
+	background: #000000;
+	display: block;
+	position: absolute;
+	border-radius: 3px;
+}
+.burger::after {
+	top: 14px;
+}
+.burger::before {
+	top: 28px;
+}
+
+input:checked ~ #menu{
+    height: 100vh;
+	transition: 5s;
+	
+}
+
+input:checked ~ #menu ul li {
+	
+	position: absolute;
+    padding-left:10px;
+	display:list-item;
+}
+input:checked ~ #menu ul li a{
+	display: block;
+	padding-top: 50px;
+}    
+
+
+	/* Container SUP mobile */
+
 .containerall {
 	width: 100%;
 	display: block;	
@@ -272,7 +330,10 @@ h2 {
 .containerall {
 	width: 100%;
 }
-.menu img {
+#menu ul {
+	padding-left: 0%;
+  }
+#menu img {
 	height: 80px;
 	}
 .containerme {
