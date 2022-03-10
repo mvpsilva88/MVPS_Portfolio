@@ -52,10 +52,17 @@ input {
 
 .containerall {
 	width: 80%;
-	padding-top: 100px;
+	padding-top: 130px;
 	margin-right: auto;
 	margin-left: auto;
 	display: block;	
+}
+.containerbox {
+	
+	overflow: hidden;
+	width: 80%;
+    background-color: #E3EEF0;
+    clear: both;
 }
  .containerme {
     height: 450px;
@@ -72,7 +79,6 @@ input {
 	height:450px;
     float: left;
     color: #FFFFFF;
-	
 }
 
 .column_txt {
@@ -91,7 +97,7 @@ input {
 	padding-left: 330px;	
 }
 
-h1 {
+.column_txt h1 {
 	font-family:"bebas neue";
 	font-weight: normal;
 	font-size: 60pt;
@@ -114,6 +120,124 @@ h2 {
     text-align: left;
 	line-height: 22pt;
 	letter-spacing: 2px;
+}
+/* Gallery */
+
+
+.containerimg {
+	margin-bottom: 30px;
+	
+}
+.gallery{
+	height: 350px;
+	width: 48%;
+    text-decoration: none;
+	margin-right:1%;
+	margin-left: 1%;
+	margin-top: 30px;
+    float: left;
+	display: block;
+}
+
+.gallery img {
+    margin-top: 30px;
+	height: 100%;
+	width: 100%;
+	
+}
+
+.gallery:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background:#868686;
+	opacity: 0;
+	transform: translate3d(-100%, 0, 0, 0);
+	transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+}
+	
+ .gallery:hover:after{
+    opacity: 0.95;
+	transform: translate3d(0, 0, 0);
+}
+
+.gallery h1 {
+	opacity: 0;
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 5px;
+	position: absolute;
+	top: 35px;
+	left: 40px;
+	z-index: 2;
+	transition: all 0.2s ease-in-out;
+}
+
+h1 {
+    font-family: futura-pt-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	font-size: 25pt;
+	
+}
+.gallery h2 {
+    font-family: "gibbs light";
+	letter-spacing: 1pt;
+	font-size: 12pt;
+	font-weight: 100;
+}
+	
+.gallery:hover h1{
+	opacity: 1;
+	color: #FFF;
+}
+
+.gallery p {
+    max-width: 350px;
+    color: #FFF;
+    opacity: 0;
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+}
+
+.gallery .viewmore{ 
+    opacity: 0;
+	z-index: 2;
+	position: absolute;
+	left: 40px;
+	bottom: 33px;
+	color: #FFF;
+	font-weight: 600;
+	transition: all 0.2s ease-in-out;
+}
+.gallery:hover p {
+	opacity: 1;
+}
+
+.gallery .viewmore:after {
+	content: ' \203A';
+	vertical-align: -1px;
+}
+
+.gallery:hover .viewmore {
+	opacity: 1;
+}
+
+.gallery_joinbox {
+	background-image:url("../images/Telas-(2).png");
+	
+
+}
+
+.gallery_bricolemos{
+	background-image: url("../images/paulino_marca.png");
+	
 }
 
 /* Container INF */
