@@ -14,10 +14,8 @@ input {
 }    
 #menu {
 	overflow: hidden;
-	position: fixed;
 	width: 100%;
 	background: #FFFFFF;
-	
 }
 #menu ul {
   display: flex;
@@ -39,31 +37,25 @@ input {
 #menu ul li a {
 	color:#000000;
 	text-decoration: none;
-	font-family:"Futura PT Condensed";
-	font-size: 20pt;
-	font-weight: 500;
+	font-family: raleway, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18pt;
 }
 
 #menu ul li .active {
-	text-decoration: underline;
+	font-weight: 600;
 }
 
 /* Container SUP */
 
 .containerall {
 	width: 80%;
-	padding-top: 130px;
 	margin-right: auto;
 	margin-left: auto;
 	display: block;	
 }
-.containerbox {
-	
-	overflow: hidden;
-	width: 80%;
-    background-color: #E3EEF0;
-    clear: both;
-}
+
  .containerme {
     height: 450px;
 	width: 100%;
@@ -89,193 +81,155 @@ input {
     color: #FFFFFF;
 }
 .column_txt h2 {
+	font-size: 18pt;
 	padding-right: 30px;
 	padding-left: 150px;
+	font-size: 16pt;
+	line-height: 22pt;
+	color: #FFFFFF;
 }
 
 .column_txt h4 {
-	padding-left: 330px;	
+		text-align: left;
+		padding-left: 40px;
+		color: #FFFFFF;
+		font-size: 18pt;
 }
 
 .column_txt h1 {
-	font-family:"bebas neue";
-	font-weight: normal;
+	font-family: bebas-neue, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	font-size: 60pt;
 	line-height: 10px;
 	text-align: left;
 	font-variant-caps:small-caps;
+	color: #FFFFFF;
 }
 h4 {
-	font-family:gibbs;
-	font-size: 20pt;
-	line-height: 5px;
-	text-align: left;
-	color: #FFFFFF;
+	font-family: gibbs, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	color: black;
 	opacity: 1;
 }
 h2 {
-    font-family:"gibbs light";
-    font-size: 16pt;
-    font-weight:lighter;
-    text-align: left;
-	line-height: 22pt;
-	letter-spacing: 2px;
-}
-/* Gallery */
-
-
-.containerimg {
-	margin-bottom: 30px;
-	
-}
-.gallery{
-	height: 350px;
-	width: 48%;
-    text-decoration: none;
-	margin-right:1%;
-	margin-left: 1%;
-	margin-top: 30px;
-    float: left;
-	display: block;
-}
-
-.gallery img {
-    margin-top: 30px;
-	height: 100%;
-	width: 100%;
-	
-}
-
-.gallery:after {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	background:#868686;
-	opacity: 0;
-	transform: translate3d(-100%, 0, 0, 0);
-	transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
-}
-	
- .gallery:hover:after{
-    opacity: 0.95;
-	transform: translate3d(0, 0, 0);
-}
-
-.gallery h1 {
-	opacity: 0;
-	color: #333;
-	font-weight: 600;
-	margin-bottom: 5px;
-	position: absolute;
-	top: 35px;
-	left: 40px;
-	z-index: 2;
-	transition: all 0.2s ease-in-out;
-}
-
-h1 {
-    font-family: futura-pt-condensed, sans-serif;
+	font-family: lemonde-journal,serif;
     font-weight: 400;
     font-style: normal;
-	font-size: 25pt;
-	
+	color: black;
 }
-.gallery h2 {
-    font-family: "gibbs light";
-	letter-spacing: 1pt;
-	font-size: 12pt;
-	font-weight: 100;
-}
-	
-.gallery:hover h1{
-	opacity: 1;
-	color: #FFF;
-}
-
-.gallery p {
-    max-width: 350px;
-    color: #FFF;
-    opacity: 0;
-    position: absolute;
-    left: 40px;
-    top: 100px;
-    z-index: 2;
-    transition: all 0.2s ease-in-out;
-}
-
-.gallery .viewmore{ 
-    opacity: 0;
-	z-index: 2;
-	position: absolute;
-	left: 40px;
-	bottom: 33px;
-	color: #FFF;
-	font-weight: 600;
-	transition: all 0.2s ease-in-out;
-}
-.gallery:hover p {
-	opacity: 1;
-}
-
-.gallery .viewmore:after {
-	content: ' \203A';
-	vertical-align: -1px;
-}
-
-.gallery:hover .viewmore {
-	opacity: 1;
-}
-
-.gallery_joinbox {
-	background-image:url("../images/Telas-(2).png");
-	
-
-}
-
-.gallery_bricolemos{
-	background-image: url("../images/paulino_marca.png");
-	
-}
-
-/* Container INF */
-
 .containerbox {
+	
 	overflow: hidden;
-    height: 100%;
-    width: 100%;
+	width: 100%;
     background-color: #E3EEF0;
     clear: both;
+	padding-bottom: 30px;
 }
 .textme{
-    width: 50%;
-    height: auto;
-    text-align: left;
     color: #000000;
     float: left;
-    padding-right: 0px;
-	padding-top: 20px;
+	width: 50%;
+    height: auto;
+    
+	
 }
 .textme h2 {
-	padding-left: 60px;
-
+	font-size: 16pt;
+	line-height: 22pt;
+	text-align: justify;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+	width: 90%;
 }
 .moodme {
 	height: auto;
     width: 50%;
     color: #000000;
 	float: right;
-	padding-bottom: 50px;
+	margin-bottom: 20px;
 }
+
 .moodme img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
     margin-top: 100px;
+	width: 90%;
 }
+/* Gallery */
+
+
+.containerimg {
+	margin-bottom: 30px;
+	display: flex;
+}
+
+.image_box {
+	position: relative;
+	width: 100%;
+	cursor: pointer;
+	max-width: 400px;
+	min-width: 250px;
+}
+.image_box a {
+	width: 100%;
+	height: 100%;
+}
+.image_img {
+	display: block;
+	width: 100%;
+}
+
+.image_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;
+	opacity: 0;
+}
+ 
+.image_overlay:hover {
+	opacity: 1;
+	transition: .5s;
+}
+
+.image_overlay p{
+	font-family: gibbs, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	width: 80%;
+}
+ul#gallery {
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	list-style: none;
+	margin: 0 auto;
+	padding: 30px;
+}
+ul#gallery li {
+	padding-top: 30px;
+	
+}
+/* BLOG */
+
+
+
+/* Container INF */
+
 .copyright {
 	width: 100%;
     padding-top: 20px;
@@ -384,6 +338,7 @@ input:checked ~ #menu ul li a{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 20px;
 }
 .column_txt {
 	display: block;
@@ -402,9 +357,7 @@ input:checked ~ #menu ul li a{
 }
 .column_txt h4 {
 	font-size: 15pt;
-	padding-left: 25%;
-	padding-right: auto;
-	text-align: left;
+
 	}
 .containerbox {
 	overflow: hidden;
@@ -424,7 +377,6 @@ input:checked ~ #menu ul li a{
 }
 .textme h2 {
 	font-size: 12pt;
-	padding-left: 10px;
 	line-height: 15pt;
 }
 .moodme {
@@ -449,13 +401,13 @@ input:checked ~ #menu ul li a{
 }
 /* small tablets*/
 
-@media (min-width : 700px ) and ( max-width : 1096px ){
+@media (min-width : 700px ) and ( max-width : 900px ){
 
 .containerall {
-	width: 100%;
+	width: 90%;
 }
 #menu ul {
-	padding-left: 0%;
+	padding-left: 5%;
   }
 #menu img {
 	height: 80px;
@@ -464,37 +416,84 @@ input:checked ~ #menu ul li a{
 	margin-top: 10px;
 	}
 .column_txt h1 {
-	font-size: 30pt;
+	font-size: 35pt;
 	}
 .column_txt h2 {
-	padding-right: 8px;
+	padding-right: 0px;
 	padding-left: 0px;
-	font-size: 14pt;
+	font-size: 12pt;
 }
 .column_txt h4 {
 	font-size: 18pt;
-	padding-left: 0px;
-	padding-right: 40px;
-	text-align: right;
 	}
+.containerbox {
+	overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #E3EEF0;
+    clear: both;
 }
+.textme{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    color: #000000;
+    float: left;
+    padding-right: 0px;
+	padding-top: 0px;
+}
+.textme h2 {
+	font-size: 14pt;
+	line-height: 18pt;
+}
+.moodme {
+	height: auto;
+    width: 100%;
+    color: #000000;
+	float: right;
+	margin-bottom: 20px;
+}
+.moodme img {
+	width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 0px;
+}
+}
+@media (min-width : 900px ) and ( max-width : 1096px ){
+
+	#menu ul {
+		padding-left: 10%;
+	  }
+	#menu img {
+		height: 80px;
+		}
+	.containerme {
+		margin-top: 10px;
+		}
+	.column_txt h1 {
+		font-size: 40pt;
+		}
+	.column_txt h2 {
+		padding-right: 8px;
+		padding-left: 0px;
+	}
+	.textme h2 {
+			font-size: 14pt;
+			line-height: 18pt;
+		}
+	}
 @media ( min-width : 1096px ) and (max-width : 1920px ){
 	
 .containerme {
 	margin-top: 10px;
 	}
 .column_txt h1 {
-	font-size: 40pt;
+	font-size: 45pt;
 	}
 .column_txt h2 {
 	padding-right: 10px;
 	padding-left: 0px;
-	font-size: 14pt;
 }
-.column_txt h4 {
-	font-size: 18pt;
-	padding-left: 0px;
-	padding-right: 40px;
-	text-align: right;
-	}
 }
