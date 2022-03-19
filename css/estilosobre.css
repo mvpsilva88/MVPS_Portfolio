@@ -215,13 +215,13 @@ ul#gallery {
 	float: left;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content:center;
 	list-style: none;
 	margin: 0 auto;
 	padding: 30px;
 }
 ul#gallery li {
-	padding-top: 30px;
+	padding: 10px;
 	
 }
 /* BLOG */
