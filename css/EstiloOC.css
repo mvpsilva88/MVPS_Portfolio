@@ -1,10 +1,36 @@
 @charset "UTF-8";
 
 .boxintro {
-    height: 600px;
+    height: 400px;
     width: 100%;
+    margin-bottom: 30px;
 }
 
-.img_ondechove {
+.columnimg {
+    float: left;
+    width: 40%;
+}
+
+.imgondechove {
     height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.resumeondechove {
+    padding-top: 30px;
+    width: 60%;
+    float: right;
+    
+}
+.resumeondechove h2 {
+    font-size: 14pt;
+    color: #3a3a3a;
+    font-weight: 400;
+    line-height: 22pt;
+	text-align: justify;
+    width: 85%;
+    margin-left: auto;
+    margin-right: 20%;
 }

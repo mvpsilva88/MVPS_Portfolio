@@ -107,17 +107,16 @@ input {
 	color: #FFFFFF;
 }
 h4 {
-	font-family: gibbs, sans-serif;
+	font-family: raleway, sans-serif;
     font-weight: 400;
     font-style: normal;
 	color: black;
 	opacity: 1;
 }
 h2 {
-	font-family: lemonde-journal,serif;
+	font-family: raleway, sans-serif;
     font-weight: 400;
     font-style: normal;
-	color: black;
 }
 .containerbox {
 	
@@ -136,7 +135,7 @@ h2 {
 	
 }
 .textme h2 {
-	font-size: 16pt;
+	font-size: 14pt;
 	line-height: 22pt;
 	text-align: justify;
 	display: block;
@@ -144,6 +143,7 @@ h2 {
     margin-right: auto;
     margin-top: 30px;
 	width: 90%;
+	color: #3a3a3a;
 }
 .moodme {
 	height: auto;
@@ -225,8 +225,6 @@ ul#gallery li {
 	
 }
 /* BLOG */
-
-
 
 /* Container INF */
 
