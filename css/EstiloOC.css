@@ -51,3 +51,19 @@
 .ondechoveweb {
     width: 100%;
 }
+
+.boxapp {
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.boxapp h2{
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.telas {
+    width: 100%;
+}
