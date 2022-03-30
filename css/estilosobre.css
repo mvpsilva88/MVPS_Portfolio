@@ -206,8 +206,9 @@ h2 {
 }
 
 .image_overlay p{
-	font-family: gibbs, sans-serif;
-	font-weight: 700;
+	font-family: raleway, sans-serif;
+	font-weight: 600;
+	line-height: 23pt ;
 	font-style: normal;
 	width: 80%;
 }

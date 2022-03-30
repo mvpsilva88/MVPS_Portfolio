@@ -24,7 +24,7 @@
     float: right;
     
 }
-.resumeondechove h2 {
+ h2 {
     font-size: 14pt;
     color: #3a3a3a;
     font-weight: 400;
@@ -33,4 +33,16 @@
     width: 85%;
     margin-left: auto;
     margin-right: 20%;
+}
+
+.boxweb {
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.ondechoveweb {
+    width: 100%;
 }
