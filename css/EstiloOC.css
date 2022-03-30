@@ -25,7 +25,7 @@
     
 }
  h2 {
-    font-size: 14pt;
+    font-size: 12pt;
     color: #3a3a3a;
     font-weight: 400;
     line-height: 22pt;
@@ -42,7 +42,12 @@
     margin-left: auto;
 
 }
-
+.boxweb h2{
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
 .ondechoveweb {
     width: 100%;
 }
