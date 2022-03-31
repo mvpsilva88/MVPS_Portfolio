@@ -167,13 +167,13 @@ h2 {
 .containerimg {
 	margin-bottom: 30px;
 	display: flex;
-}
+	}
 
 .image_box {
 	position: relative;
 	width: 100%;
 	cursor: pointer;
-	max-width: 400px;
+	max-width: 600px;
 	min-width: 250px;
 }
 .image_box a {
@@ -213,16 +213,17 @@ h2 {
 	width: 80%;
 }
 ul#gallery {
-	float: left;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content:center;
 	list-style: none;
-	margin: 0 auto;
-	padding: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	padding-left: 0;
 }
 ul#gallery li {
-	padding: 10px;
+	padding-right:5%;
+	padding-left:5%;
 	
 }
 /* BLOG */

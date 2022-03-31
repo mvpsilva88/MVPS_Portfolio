@@ -43,10 +43,10 @@
 
 }
 .boxweb h2{
-    width: 90%;
+    width: 60%;
+    float: right;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 30px auto 30px auto;
 }
 .ondechoveweb {
     width: 100%;
@@ -59,10 +59,10 @@
     margin-left: auto;
 }
 .boxapp h2{
-    width: 90%;
+    width: 60%;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    float: right;
+    margin: 30px auto 30px auto;
 }
 .telas {
     width: 100%;
