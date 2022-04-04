@@ -166,24 +166,23 @@ h2 {
 
 .containerimg {
 	margin-bottom: 30px;
-	display: flex;
+	display: block;
 	}
 
 .image_box {
 	position: relative;
-	width: 100%;
-	cursor: pointer;
-	max-width: 600px;
-	min-width: 250px;
-}
-.image_box a {
-	width: 100%;
 	height: 100%;
+	cursor: pointer;
+	
 }
-.image_img {
-	display: block;
+.image_box img {
+	position:relative;
+	height: 100%;
 	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
+
 
 .image_overlay {
 	position: absolute;
@@ -212,20 +211,21 @@ h2 {
 	font-style: normal;
 	width: 80%;
 }
-ul#gallery {
-	display: flex;
-	justify-content:center;
-	list-style: none;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 30px;
-	padding-left: 0;
+.gallery {
+
+--gap: 50px;
+--num-cols: 2;
+--row-height: 47%;
+box-sizing: border-box;
+padding: var(--gap);
+display: grid;
+grid-template-columns: repeat(var(--num-cols), 1fr);
+grid-auto-rows: var(--row-height);
+gap: var(--gap);
+
 }
-ul#gallery li {
-	padding-right:5%;
-	padding-left:5%;
-	
-}
+
+
 /* BLOG */
 
 /* Container INF */

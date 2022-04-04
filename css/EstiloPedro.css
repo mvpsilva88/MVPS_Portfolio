@@ -1,26 +1,25 @@
 @charset "UTF-8";
 
  .boxintro {
+     padding-top: 50px;
     width: 100%;
     margin-bottom: 30px;
     overflow: hidden;
 }
 
 .boxintro img {
-    height: 400px;
-    padding-left: 10%;
-    padding-right: 5%;
+    width: 400px;
+    padding-left: 5%;
     display: block;
     float: left;
 }
 
 .boxintro h2 {
     display: block;
-    padding-top: 30px;
-    margin-right: 10%;
-    margin-left: auto;
-    width: 50%;
-    float: right;  
+    
+    width: 45%;
+    float: right; 
+    padding-right: 5%; 
 }
  h2 {
     font-size: 12pt;
@@ -31,13 +30,34 @@
 }
 
 .boxweb {
+    
     overflow: hidden;
-    width: 80%;
     display: block;
     margin-right: auto;
     margin-left: auto;
 
 }
+.grid1 {
+    padding: 30px;
+box-sizing: border-box;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+justify-content: center;
+column-gap: 20px;
+
+}
+
+.boximg {
+    min-height: 200px;
+        height: 290px;
+
+}
+
+.grid1 img {
+    height: 100%;
+    object-fit: cover;
+}
+
 .boxweb h2{
     width: 60%;
     float: right;
