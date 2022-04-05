@@ -68,6 +68,11 @@ column-gap: 20px;
     width: 100%;
 }
 
+.wireframes {
+    width: 50%;
+    float: left;
+}
+
 .boxapp {
     overflow: hidden;
     width: 80%;

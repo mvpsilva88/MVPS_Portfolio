@@ -38,14 +38,28 @@
     margin-left: auto;
 
 }
-.boxweb h2{
+
+.ondechoveweb {
+    width: 100%;
+}
+
+.wiretext h2{
     width: 60%;
     float: right;
     display: block;
     margin: 30px auto 30px auto;
 }
-.ondechoveweb {
-    width: 100%;
+
+.wiretext {
+    display: block;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wireframes {
+    width: 40%;
+    float: left;
+    margin: auto;
 }
 
 .boxapp {
