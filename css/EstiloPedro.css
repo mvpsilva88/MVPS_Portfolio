@@ -16,10 +16,9 @@
 
 .boxintro h2 {
     display: block;
-    
-    width: 45%;
+    width: 50%;
     float: right; 
-    padding-right: 5%; 
+    padding-right: 10%; 
 }
  h2 {
     font-size: 12pt;
@@ -37,30 +36,24 @@
     margin-left: auto;
 
 }
-.grid1 {
-    padding: 30px;
-box-sizing: border-box;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-justify-content: center;
-column-gap: 20px;
-
-}
 
 .boximg {
-    min-height: 200px;
-        height: 290px;
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
-.grid1 img {
-    height: 100%;
+.pics1 {
+    max-height: 300px;
     object-fit: cover;
+    padding: 10px;
 }
 
 .boxweb h2{
     width: 60%;
     float: right;
+    padding-right: 10%;
     display: block;
     margin: 30px auto 30px auto;
 }
@@ -68,17 +61,11 @@ column-gap: 20px;
     width: 100%;
 }
 
-.wireframes {
-    width: 50%;
-    float: left;
-}
-
 .boxapp {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     overflow: hidden;
-    width: 80%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
 }
 .boxapp h2{
     width: 60%;
@@ -86,6 +73,10 @@ column-gap: 20px;
     float: right;
     margin: 30px auto 30px auto;
 }
-.telas {
-    width: 100%;
+.boximg2{ 
+    height: 300px;
+}
+.boximg2 img {
+        height: 100%;
+        padding: 10px;
 }
