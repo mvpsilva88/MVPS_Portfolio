@@ -13,6 +13,7 @@ input {
     display: none;
 }    
 #menu {
+	
 	overflow: hidden;
 	width: 100%;
 	background: #FFFFFF;
@@ -256,11 +257,17 @@ gap: var(--gap);
 
 #menu img {
 	height: 60px;
+	margin-top: 0px;
 	}
 #menu ul {
+	display: block;
 	padding-left: 0%;
+	
 	  }
 #menu ul li {
+	display: block;
+	height: 100px;
+	margin-top: 30px;
 	display: none;
 	}
 .btburger {
@@ -298,9 +305,11 @@ gap: var(--gap);
 	top: 28px;
 }
 
+
 input:checked ~ #menu{
     height: 100vh;
 	transition: 5s;
+	position: absolute;
 	
 }
 
@@ -315,12 +324,16 @@ input:checked ~ #menu ul li a{
 	padding-top: 50px;
 }    
 
+input:checked ~ .image_img {
+	display: none;
+}
 
 	/* Container SUP mobile */
 
 .containerall {
 	width: 100%;
 	display: block;	
+	overflow: hidden;
 }
 .containerme {
 	margin-top: 10px;

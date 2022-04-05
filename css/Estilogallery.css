@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+.containerimg {
+	margin-bottom: 30px;
+	display: block;
+	}
+
+.image_box {
+	position: relative;
+	height: 100%;
+	cursor: pointer;
+	
+}
+.image_box img {
+	position:relative;
+	height: 100%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.image_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;
+	opacity: 0;
+}
+ 
+.image_overlay:hover {
+	opacity: 1;
+	transition: .5s;
+}
+
+.image_overlay p{
+	font-family: raleway, sans-serif;
+	font-weight: 600;
+	line-height: 23pt ;
+	font-style: normal;
+	width: 80%;
+}
+.gallery {
+
+--gap: 50px;
+--num-cols: 2;
+--row-height: 47%;
+box-sizing: border-box;
+padding: var(--gap);
+display: grid;
+grid-template-columns: repeat(var(--num-cols), 1fr);
+grid-auto-rows: var(--row-height);
+gap: var(--gap);
+
+}
