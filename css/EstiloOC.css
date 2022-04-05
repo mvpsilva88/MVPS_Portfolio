@@ -44,22 +44,25 @@
 }
 
 .wiretext h2{
-    width: 60%;
-    float: right;
-    display: block;
-    margin: 30px auto 30px auto;
+    width: 95%;
+    
+    
 }
 
 .wiretext {
-    display: block;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     overflow: hidden;
+    justify-content:space-between;
 }
 
-.wireframes {
-    width: 40%;
-    float: left;
-    margin: auto;
+.wiretext img {
+   object-fit: cover;
+  width: 100%;
+   margin: auto;
+    
 }
 
 .boxapp {
@@ -70,9 +73,9 @@
     margin-left: auto;
 }
 .boxapp h2{
-    width: 60%;
+    width: 80%;
     display: block;
-    float: right;
+   
     margin: 30px auto 30px auto;
 }
 .telas {
