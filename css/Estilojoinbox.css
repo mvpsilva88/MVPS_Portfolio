@@ -15,8 +15,8 @@
 }
 
 .boxintro h2 {
-    float: right;
-    padding-right: 10%;
+    width: 40%;
+    
 
 }
 
@@ -57,15 +57,7 @@
     float: left;
     padding-left: 10%;
 }
-.imgthesims {
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 30px;
 
-
-}
 .expansao {
     max-width: 30%;
     float: right;
@@ -76,15 +68,98 @@
 }
 
 .boxapp {
+    padding-top: 50px;
     overflow: hidden;
     width: 100%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;
+    justify-content: space-evenly;
 }
-.boxapp h2{
-    width: 60%;
-    display: block;
-    float: right;
-    margin: 30px auto 30px auto;
+
+.boxapp img{
+    max-width: 40%;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .boxintro {
+        display: block;
+        padding-bottom: 10px;
+        overflow: hidden;
+    
+    }
+    .boxintro img {
+       width: 90%;     
+    }
+    
+    .boxintro h2 {
+        width: 90%;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+            
+    }
+    
+     h2 {
+        font-size: 11pt;
+        color: #3a3a3a;
+        font-weight: 400;
+        line-height: 18pt;
+        text-align: justify;
+    }
+    
+    .boxweb {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .mindmap2 {
+        width: 80%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .boxweb h2{
+        width: 90%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+    .thesims {
+        overflow: hidden;
+    }
+    .thesims h2{
+        width: 90%;
+        float: left;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+   
+    .expansao {
+        max-width: 80%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .boxapp {
+        padding-top: 50px;
+        overflow: hidden;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .boxapp img {
+        max-width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+    }
 }
