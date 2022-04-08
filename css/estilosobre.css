@@ -157,6 +157,7 @@ h2 {
 .containerimg {
 	margin-bottom: 30px;
 	display: block;
+	
 	}
 
 
@@ -171,17 +172,14 @@ h2 {
 }
 
 .image_box {
-	
 	cursor: pointer;
-	max-width: 47%;
+	max-width: 45%;
 	min-width: 300px;
 	padding-bottom: 50px;
 	
 }
 
 .image_img {
-	object-fit: cover;
-	height: 290px;
 	width: 100%;
 	
 }
