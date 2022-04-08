@@ -120,23 +120,20 @@ h2 {
 	padding-bottom: 30px;
 }
 .textme{
-    color: #000000;
     float: left;
 	width: 50%;
     height: auto;
-    
-	
 }
-.textme h2 {
-	font-size: 14pt;
-	line-height: 22pt;
+.textme h4 {
+	font-size: 16pt;
+	line-height: 24pt;
 	text-align: justify;
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 70px;
 	width: 90%;
-	color: #3a3a3a;
+	color: #4d4d4d;
 }
 .moodme {
 	height: auto;
