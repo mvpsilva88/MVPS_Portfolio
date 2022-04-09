@@ -123,9 +123,11 @@ h2 {
     float: left;
 	width: 50%;
     height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
-.textme h4 {
-	font-size: 16pt;
+.textme h2 {
+	font-size: 14pt;
 	line-height: 24pt;
 	text-align: justify;
 	display: block;
@@ -184,9 +186,9 @@ h2 {
 	
 }
 
-.image_description h4 { 
-    font-size: 16pt;
-	font-weight: 700;
+.image_description h2 { 
+    font-size: 18pt;
+	font-weight: 900;
 	text-decoration: none;
 	line-height: 16pt;
 	text-align: left;
@@ -196,14 +198,14 @@ h2 {
 }
 
 .image_description p {
-	font-size: 12pt;
-	font-family: lemonde-journal, serif;
+	font-size: 14pt;
+	font-family: raleway, sans-serif;
     font-weight: 400;
     font-style: normal;
-	color:#3a3a3a;
+	color: #3a3a3a;
 	margin-top: 0;
-	width: 70%;
-	padding-left: 5%;
+	width: 90%;
+	
 }
 
 /* BLOG */
@@ -374,7 +376,7 @@ h2 {
 	
 }
 
-.image_description h4 { 
+.image_description h2 { 
     font-size: 14pt;
 }
 
